@@ -22,12 +22,10 @@ function Content () {
           <Box component="img" src="/navigation.png" position="absolute" top={772} left={0}/>
           <Box component="img" src="/Vector1.svg" position="absolute" top={190} left={500}/>
           <Box component="img" src="/Vector2.svg" position="absolute" right={400} top={1120}/>
-          <Box position="absolute" top={300} left={80} color="#E1D3C1" className="constructorTest">
-            <Box position="absolute" left={-40} top={-80} component="img" src="/constructorBackground.png"/>
-            <Box position="relative" zIndex={10}>
+          <Box position="absolute" top={300} left={80} display="flex" flexDirection="column" alignItems="center" justifyContent="center" color="#E1D3C1" className="constructorBackground" >
+            {/*<Box position="absolute" left={-40} top={-80} component="img" src="/constructorBackground.png"/>*/}
               <Box component="span" fontSize={20} fontWeight={500}>Удобный конструктор уроков и тестов</Box>
               <Box mt={2} fontSize={20} fontWeight={300} maxWidth={400}>Собирайте Ваш курс с помощью потрясающих виджетов. Без программистов и дизайнеров, полностью самостоятельно, как на сайте, так и с телефона. Все работает действительно понятно и удобно</Box>
-            </Box>
           </Box>
           <Box component="img" src="/background2.png" />
         </Box>

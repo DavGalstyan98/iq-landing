@@ -34,6 +34,45 @@
     background: linear-gradient(228.5deg, rgba(79, 63, 132, 0.5) 38.4%, rgba(116, 92, 197, 0) 117.48%), linear-gradient(132.23deg, rgba(15, 189, 233, 0.7) 17.62%, rgba(76, 210, 243, 0) 85.59%);
 }
 
-/*.constructorTest {*/
-/*    background-image: url("/constructorBackground.png");*/
-/*}*/
+.constructorBackground {
+    width: 596px;
+    height: 385px;
+    background: url('/src/svg/constructorBackground.png') no-repeat center;
+}
+
+.studentsBackground {
+    width: 549px;
+    height: 389px;
+    background: url('/src/svg/studentsBackground.png') no-repeat center;
+}
+
+.messengerBackground {
+    width: 568px;
+    height: 355px;
+    background: url('/src/svg/manegerBackground.png') no-repeat center;
+}
+
+.payBackground {
+    width: 549px;
+    height: 389px;
+    background: url('/src/svg/payBackground.png') no-repeat center;
+}
+
+.pushBackground {
+    width: 549px;
+    height: 389px;
+    background: url('/src/svg/pushBackground.png') no-repeat center;
+}
+
+.optionBackground {
+    width: 543px;
+    height: 339px;
+    background: url('/src/svg/optionBackground.png') no-repeat center;
+}
+
+.iphoneBackground {
+    width: 603px;
+    height: 354px;
+    background: url('/src/svg/iphoneBackground.png') no-repeat center;
+}
+

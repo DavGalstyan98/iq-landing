@@ -8,12 +8,9 @@ function Notifications () {
       <Box position="absolute" top={0} >
         <Box position="relative" >
           <Box component="img" src="/background9.png" position="absolute" top={110} />
-          <Box position="absolute" top={380} left={200} color="#E1D3C1" className="constructorTest" zIndex={4}>
-            <Box position="absolute" right={-50} top={-80} component="img" src="/pushBackground.png"/>
-            <Box position="relative" zIndex={10} width={400}>
+          <Box position="absolute" top={280} left={100} color="#E1D3C1" className="pushBackground" zIndex={4} display="flex" flexDirection="column" alignItems="center" justifyContent="center">
               <Box component="span" fontSize={20} maxWidth={342} fontWeight={500}>Push уведомления и рассылки</Box>
               <Box mt={2} fontSize={20} fontWeight={300} maxWidth={387}>Осуществляйте промо акции, уведомляйте учеников о новых материалах. Стимулируйте подписчиков покупать Ваши курсы</Box>
-            </Box>
           </Box>
           <Box component="img" src="/nav.png" position="absolute" top={556} left={270} zIndex={1}/>
           <Box component="img" src="/notification.png" position="absolute" top={250} right={58}/>

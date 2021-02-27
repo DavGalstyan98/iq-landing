@@ -8,14 +8,11 @@ function Finansical() {
       <Box position="absolute" top={0}>
         <Box position="relative">
           <Box component="img" src="/background7.png" position="absolute" top={110}/>
-          <Box position="absolute" top={440} right={200} color="#E1D3C1" className="constructorTest" zIndex={4}>
-            <Box position="absolute" right={-50} top={-80} component="img" src="/payBackground.png"/>
-            <Box position="relative" zIndex={10} width={400}>
+          <Box position="absolute" top={360} right={160} color="#E1D3C1" className="payBackground" zIndex={4} display="flex" flexDirection="column" alignItems="center" justifyContent="center">
               <Box component="span" fontSize={20} maxWidth={342} fontWeight={500}>Управление учениками и контроль
                 прогресса обучения</Box>
               <Box mt={2} fontSize={20} fontWeight={300} maxWidth={382}>Отвечайте на вопросы учеников, беспокоить смогут
                 только платные студенты</Box>
-            </Box>
           </Box>
           <Box component="img" src="/finans.png" position="absolute" top={354} left={0}/>
           <Box component="img" src="/price.png" position="absolute" top={770} left={440}/>

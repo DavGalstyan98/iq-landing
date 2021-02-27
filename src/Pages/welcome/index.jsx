@@ -109,7 +109,7 @@ function Welcome () {
           <Box component="span" fontSize={36} fontWeight={300} maxWidth={600} color="rgba(225, 211, 193, 0.87)">В это непростое время IQ.Academy стал одним из самых ценных партнеров. Проект позволяет преподавателям и консультантам зарабатывать создавая увлекательные онлайн курсы, чтобы студенты успешно осваивали учебный материал и получали дополнительные знания и навыки.</Box>
           <Box component="img" src="/user.png"/>
         </Box>
-        <Box  top={1100} position="absolute" display="flex" flexDirection="column">
+        <Box  top={1100} position="absolute" display="flex" flexDirection="column" width={1}>
           <Box component="span" fontSize={36} fontWeight={300} color="rgba(15, 189, 233, 0.87)" >Мы создали идеальные условия для сотрудничества,<br/> которых нет ни у одного конкурента</Box>
           <Footer/>
         </Box>
@@ -120,7 +120,7 @@ function Welcome () {
           </Box>
         </Box>
       </Box>
-      <Box bgcolor="#222222" position="relative" minHeight={500} zIndex={0}>
+      <Box bgcolor="#222222" position="relative" minHeight={510} zIndex={0}>
         <Box position="absolute" top={200} left="15%" zIndex={10} textAlign="left" display="flex" flexDirection="column">
           <Box component="span" mb={2} color="#E1D3C1" fontSize={20} fontWeight={500}>Нужны персональные условия? </Box>
           <Box component="span" mb={2} color="#E1D3C1" fontSize={20} fontWeight={300}>Оставьте заявку, мы перезвоним и обсудим детали</Box>
@@ -130,11 +130,9 @@ function Welcome () {
           </Box>
         </Box>
         <Box position="absolute" top={0} >
-          <Box position="relative" width={1}>
-            <Box component="img" src="/backgroundEnd.png" position="absolute" top={110} />
-          </Box>
+            <Box component="img" src="/backgroundEnd.png" position="relative" top={110} />
         </Box>
-        <Box component="img" src="/background18.png" position="relative" zIndex={1}/>
+        <Box component="img" src="/background18.png" position="relative" zIndex={1} left={-20}/>
       </Box>
     </Box>
   )

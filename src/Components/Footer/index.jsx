@@ -70,8 +70,8 @@ const explanations = [
 
 function Footer() {
   return (
-    <Box mt={40} width={1}>
-      <Box display="flex" justifyContent="space-between" ml={2} alignItems="center" maxWidth={1266}>
+    <Box mt={40} width={1} >
+      <Box display="flex" justifyContent="center" width={1}>
         {cards.map(card => {
           return (
             <Box display="flex" flexDirection="column" alignItems="center" key={card.title} mr={2} px={6} py={4} className="footerCard" borderRadius={20} position="relative">
@@ -89,17 +89,19 @@ function Footer() {
           )
         })}
       </Box>
-      <Box maxWidth={1266} className="footerCard" p={3.5} height={300} mt={8} ml={2} borderRadius={20} display="inline-grid" gridTemplateColumns='auto auto auto' gridRowGap={48} gridColumnGap={12}>
-        {explanations.map(expl => {
-          return (
-            <Box  display="flex" alignItems="center">
-              <Box key={expl.id} mr={2}>
-                <Box display="flex" justifyContent="center" alignItems="center"  borderRadius="50%" className="footerCircle" width={50} height={50} fontSize={20} fontWeight={1} color="#E1D3C1">{expl.id}</Box>
+      <Box width={1} display="flex" justifyContent="center">
+        <Box maxWidth={1266} className="footerCard" p={3.5} height={300} mt={8} borderRadius={20} display="inline-grid" gridTemplateColumns='auto auto auto' gridRowGap={48} gridColumnGap={12}>
+          {explanations.map(expl => {
+            return (
+              <Box  display="flex" alignItems="center">
+                <Box key={expl.id} mr={2}>
+                  <Box display="flex" justifyContent="center" alignItems="center"  borderRadius="50%" className="footerCircle" width={50} height={50} fontSize={20} fontWeight={1} color="#E1D3C1">{expl.id}</Box>
+                </Box>
+                <Box  fontSize={20} fontWeight={1} color="#E1D3C1" maxWidth={366} mr={2} textAlign="left">{expl.text}</Box>
               </Box>
-              <Box  fontSize={20} fontWeight={1} color="#E1D3C1" maxWidth={366} mr={2} textAlign="left">{expl.text}</Box>
-            </Box>
-          )
-        })}
+            )
+          })}
+        </Box>
       </Box>
       <Box mt={6}>
         <Button text='Начать работу с IQ.Academy'/>

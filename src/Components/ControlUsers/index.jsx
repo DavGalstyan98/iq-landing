@@ -7,13 +7,9 @@ function ControlUsers () {
       <Box position="absolute" top={0} >
         <Box position="relative" >
           <Box component="img" src="/background3.png" position="absolute" top={110} />
-          <Box position="absolute" top={300} right={200} color="#E1D3C1" className="constructorTest" zIndex={2}>
-            <Box position="absolute" right={-50} top={-80} component="img" src="/studentsBackground.png"/>
-            <Box position="relative" zIndex={10} width={400}>
+          <Box position="absolute" top={180} right={200} color="#E1D3C1" className="studentsBackground" zIndex={2} display="flex" flexDirection="column" alignItems="center" justifyContent="center">
               <Box component="span" fontSize={20} maxWidth={342} fontWeight={500}>Управление учениками и контроль прогресса обучения</Box>
               <Box mt={2} fontSize={20} fontWeight={300} maxWidth={382}>Отвечайте на вопросы учеников, беспокоить смогут только платные студенты</Box>
-            </Box>
-
           </Box>
           <Box component="img" src="/students.png" position="absolute" top={450} left={0}/>
           <Box component="img" src="/progress.png" position="absolute" top={800} left={200}/>
