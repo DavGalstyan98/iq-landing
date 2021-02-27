@@ -1,0 +1,39 @@
+@import "../index.css";
+
+.root {
+    height: 100%;
+}
+
+.borderRotate {
+    /*border-top: '1px solid red';*/
+    -webkit-transform: skewY(-5deg);
+    -moz-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    -o-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    background-color: #322758;
+}
+
+.borderRotate > div {
+    -webkit-transform: skewY(5deg);
+    -moz-transform: skewY(5deg);
+    -ms-transform: skewY(5deg);
+    -o-transform: skewY(5deg);
+    transform: skewY(5deg);
+}
+
+.footerCard {
+    background:  linear-gradient(195.87deg, rgba(15, 189, 233, 0.3) 33.19%, rgba(68, 131, 147, 0) 88.66%), linear-gradient(59.19deg, rgba(92, 52, 250, 0.234) 6.02%, rgba(92, 52, 250, 0.093) 52.95%);;
+}
+
+.footerCircle {
+    background:  radial-gradient(83% 61% at -15% 0%, #0FBDE9 0%, rgba(15, 189, 233, 0) 100%), radial-gradient(126.34% 75% at 66% 60%, rgba(92, 52, 250, 0.7) 0%, rgba(92, 52, 250, 0.7) 95.83%);
+}
+
+.cardTitle {
+    background: linear-gradient(228.5deg, rgba(79, 63, 132, 0.5) 38.4%, rgba(116, 92, 197, 0) 117.48%), linear-gradient(132.23deg, rgba(15, 189, 233, 0.7) 17.62%, rgba(76, 210, 243, 0) 85.59%);
+}
+
+/*.constructorTest {*/
+/*    background-image: url("/constructorBackground.png");*/
+/*}*/
