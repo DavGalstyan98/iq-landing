@@ -73,7 +73,7 @@ function Footer() {
 
   function renderLink (linkName) {
     if (linkName === 'Начать работу') {
-      return window.open('https://app.iq.academy/')
+      return window.location = 'https://app.iq.academy/'
     } else  {
       return 'dsds'
     }
@@ -96,9 +96,9 @@ function Footer() {
               <Box my={4} p={1.5} fontSize={20} fontWeight={300} color="#E1D3C1" minWidth={202} borderRadius={20} boxShadow="-6px -12px 20px rgba(95, 79, 151, 0.26), 10px 12px 20px rgba(48, 35, 94, 0.37)">{card.commission}</Box>
               <Box onClick={() => {
                 if (card.button === 'Начать работу') {
-                  return window.open('https://app.iq.academy/')
+                  return window.location = 'https://app.iq.academy/'
                 } else  {
-                  return;
+                  return window.location.href = 'mailto:center@websecure.ru';
                 }
               }}>
                 <Button text={card.button}/>
@@ -121,7 +121,7 @@ function Footer() {
           })}
         </Box>
       </Box>
-      <Box mt={6}onClick={() => window.open('https://app.iq.academy/')}>
+      <Box mt={6}onClick={() => window.location = 'https://app.iq.academy/'}>
           <Button text='Начать работу с IQ.Academy'/>
       </Box>
     </Box>

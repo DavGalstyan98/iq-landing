@@ -75,7 +75,7 @@ function Welcome () {
             в <Box component="span" color="#0FBDE9">будущее</Box> систем образования
           </Box>
           <Box component="span" fontSize={26} color="rgba(225, 211, 193, 0.87)" fontWeight={300} my={5.2}>Лучшая платформа для создания и продажи курсов</Box>
-          <Box onClick={() => window.open('https://app.iq.academy/')}>
+          <Box onClick={() => window.location = 'https://app.iq.academy/'}>
             <Button text="Начать бесплатно"/>
           </Box>
         </Box>
