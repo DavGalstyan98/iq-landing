@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+
 import {Box} from "@material-ui/core";
 import Header from "../../Components/Header";
 import Button from "../../Components/Button";
@@ -59,11 +60,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Welcome () {
-  const classes = useStyles()
+  const classes = useStyles();
+  const firstRef = useRef(null);
+  const secondRef = useRef(null);
+  const thirdRef = useRef(null)
 
   return (
     <Box className="root">
-      <Header/>
+      <Header firstRef={firstRef} secondRef={secondRef} thirdRef={thirdRef}/>
       <Box height={1}  position="relative" mt={10}>
         <Box display="flex" flexDirection="column" alignItems="center" position="relative" zIndex={10}>
           <Box component="span" fontSize={50} color="#E1D3C1" fontWeight="normal">
@@ -71,13 +75,15 @@ function Welcome () {
             в <Box component="span" color="#0FBDE9">будущее</Box> систем образования
           </Box>
           <Box component="span" fontSize={26} color="rgba(225, 211, 193, 0.87)" fontWeight={300} my={5.2}>Лучшая платформа для создания и продажи курсов</Box>
-          <Button text="Начать бесплатно"/>
+          <Box onClick={() => window.open('https://app.iq.academy/')}>
+            <Button text="Начать бесплатно"/>
+          </Box>
         </Box>
         <Box bgcolor="#222222" width={1} mb={2} height={650}>
           <Box component="img" src="/Illustration 1.png" position="absolute" zIndex={1} top={126} left={0}/>
         </Box>
       </Box>
-      <Box height={1} py={8} className="borderRotate" mt={8}>
+      <Box height={1} py={8} className="borderRotate" mt={8} ref={firstRef}>
         <Box display="flex" flexDirection="column" alignItems="center" position="relative" zIndex={10}>
           <Box component="span" fontSize={50} color="#E1D3C1" fontWeight="normal">
             Вдохновляем учить и зарабатывать
@@ -88,15 +94,15 @@ function Welcome () {
               в выбранном направлении. <br/>
               <Box component="span" color="#0FBDE9">Пора создавать будущее образования</Box>
           </Box>
-          <Box position="relative">
-            <Box display="grid" gridTemplateColumns="auto auto auto" gridGap={70} position="relative" zIndex={2}>
+          <Box position="relative" width={1} mt={8} display="flex" justifyContent="center" className="cardsBackground" alignItems="center">
+            <Box display="grid" gridTemplateColumns="auto auto auto" gridGap='70px 88px' position="relative" zIndex={2}>
               {cards.map(card => <Card key={card.title} title={card.title} description={card.description} iconSrc={card.iconSrc} />)}
             </Box>
-            <Box component="img" src='/underCardImage.png' position="absolute" top={30} left={0} right={0}/>
+            {/*<Box component="img" src='/underCardImage.png' position="absolute" top={30} left={0} right={0}/>*/}
           </Box>
         </Box>
       </Box>
-      <Content/>
+      <Content secondRef={secondRef}/>
       <ControlUsers/>
       <Messanger/>
       <Finansical/>
@@ -104,12 +110,12 @@ function Welcome () {
       <Paymant/>
       <Apple/>
       <Box bgcolor="#222222" position="relative" minHeight={2600} zIndex={1}>
-        <Box component="span" fontSize={50} color="#E1D3C1" fontWeight='normal' top={400} left="15%" position="absolute" >Лучшие условия для успешного старта </Box>
+        <Box component="span" fontSize={50} color="#E1D3C1" fontWeight='normal' top={400} left="15%" position="absolute"  ref={thirdRef}>Лучшие условия для успешного старта </Box>
         <Box position="absolute" left={32} top={600} display="flex" alignItems="center" justifyContent='space-between'>
           <Box component="span" fontSize={36} fontWeight={300} maxWidth={600} color="rgba(225, 211, 193, 0.87)">В это непростое время IQ.Academy стал одним из самых ценных партнеров. Проект позволяет преподавателям и консультантам зарабатывать создавая увлекательные онлайн курсы, чтобы студенты успешно осваивали учебный материал и получали дополнительные знания и навыки.</Box>
           <Box component="img" src="/user.png"/>
         </Box>
-        <Box  top={1100} position="absolute" display="flex" flexDirection="column" width={1}>
+        <Box  top={1100} position="absolute" display="flex" flexDirection="column" width={1} >
           <Box component="span" fontSize={36} fontWeight={300} color="rgba(15, 189, 233, 0.87)" >Мы создали идеальные условия для сотрудничества,<br/> которых нет ни у одного конкурента</Box>
           <Footer/>
         </Box>

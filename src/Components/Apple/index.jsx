@@ -11,7 +11,7 @@ function Apple () {
               <Box component="span" fontSize={20} maxWidth={329} fontWeight={500}>Собственное приложение для IPhone, IPad, Android</Box>
               <Box mt={2} fontSize={20} fontWeight={300} maxWidth={400}>IQ.Academy доступен на всех платформах - в браузере, а также в мобильных приложениях для Apple и Android. Приложения полностью функциональны как для учеников, так и для преподавателей</Box>
           </Box>
-          <Box component="img" src="/apple.png" position="absolute" top={500} left={120}/>
+          <Box component="img" src="/apple.png" position="absolute" top={500} left={80}/>
           <Box component="img" src="/background14.png" position="relative" top={-220} zIndex={-1}/>2
         </Box>
       </Box>

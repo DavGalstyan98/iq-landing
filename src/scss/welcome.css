@@ -76,3 +76,9 @@
     background: url('/src/svg/iphoneBackground.png') no-repeat center;
 }
 
+.cardsBackground {
+    width: 955px;
+    height: 625px;
+    background: url('../svg/underCardImage.png') no-repeat center;
+}
+

@@ -1,6 +1,7 @@
 import React from "react";
 import {Box} from "@material-ui/core";
 import Button from "../Button";
+import {Link, NavLink} from "react-router-dom";
 
 const cards = [
   {
@@ -69,6 +70,15 @@ const explanations = [
 ]
 
 function Footer() {
+
+  function renderLink (linkName) {
+    if (linkName === 'Начать работу') {
+      return window.open('https://app.iq.academy/')
+    } else  {
+      return 'dsds'
+    }
+  }
+
   return (
     <Box mt={40} width={1} >
       <Box display="flex" justifyContent="center" width={1}>
@@ -84,7 +94,15 @@ function Footer() {
               <Box my={4} p={1.5} fontSize={20} fontWeight={300} color="#E1D3C1" minWidth={202} borderRadius={20} boxShadow="-6px -12px 20px rgba(95, 79, 151, 0.26), 10px 12px 20px rgba(48, 35, 94, 0.37)">{card.price}</Box>
               <Box color="#E1D3C1" fontSize={20} fontWeight={500}>Комиссия с прибыли</Box>
               <Box my={4} p={1.5} fontSize={20} fontWeight={300} color="#E1D3C1" minWidth={202} borderRadius={20} boxShadow="-6px -12px 20px rgba(95, 79, 151, 0.26), 10px 12px 20px rgba(48, 35, 94, 0.37)">{card.commission}</Box>
-              <Button text={card.button}/>
+              <Box onClick={() => {
+                if (card.button === 'Начать работу') {
+                  return window.open('https://app.iq.academy/')
+                } else  {
+                  return;
+                }
+              }}>
+                <Button text={card.button}/>
+              </Box>
             </Box>
           )
         })}
@@ -103,8 +121,8 @@ function Footer() {
           })}
         </Box>
       </Box>
-      <Box mt={6}>
-        <Button text='Начать работу с IQ.Academy'/>
+      <Box mt={6}onClick={() => window.open('https://app.iq.academy/')}>
+          <Button text='Начать работу с IQ.Academy'/>
       </Box>
     </Box>
   )

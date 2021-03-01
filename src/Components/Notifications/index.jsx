@@ -12,7 +12,7 @@ function Notifications () {
               <Box component="span" fontSize={20} maxWidth={342} fontWeight={500}>Push уведомления и рассылки</Box>
               <Box mt={2} fontSize={20} fontWeight={300} maxWidth={387}>Осуществляйте промо акции, уведомляйте учеников о новых материалах. Стимулируйте подписчиков покупать Ваши курсы</Box>
           </Box>
-          <Box component="img" src="/nav.png" position="absolute" top={556} left={270} zIndex={1}/>
+          <Box component="img" src="/nav.png" position="absolute" top={556} left={250} zIndex={1}/>
           <Box component="img" src="/notification.png" position="absolute" top={250} right={58}/>
           <Box component="img" src="/settings.png" position="absolute" top={836} left={60} zIndex={2}/>
           <Box component="img" src="/background10.png" position="relative" top={-220} zIndex={-1}/>

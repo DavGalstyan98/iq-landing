@@ -1,10 +1,10 @@
 import React from "react";
 import {Box} from "@material-ui/core";
 
-function Content () {
+function Content ({secondRef}) {
   return (
 
-    <Box bgcolor="#222222" mt={10} position="relative" minHeight={1100} zIndex={8}>
+    <Box bgcolor="#222222" mt={10} position="relative" minHeight={1100} zIndex={8} width={1} ref={secondRef}>
       <Box display="flex" flexDirection="column" alignItems="center" position="relative" zIndex={10}>
         <Box component="span" fontSize={50} color="#E1D3C1" fontWeight="normal">
           Лучшие инструменты для лучших результатов
