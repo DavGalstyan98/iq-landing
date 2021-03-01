@@ -66,7 +66,7 @@ function Welcome () {
   const thirdRef = useRef(null)
 
   return (
-    <Box className="root">
+    <Box className="root" width={1}>
       <Header firstRef={firstRef} secondRef={secondRef} thirdRef={thirdRef}/>
       <Box height={1}  position="relative" mt={10}>
         <Box display="flex" flexDirection="column" alignItems="center" position="relative" zIndex={10}>
@@ -109,9 +109,9 @@ function Welcome () {
       <Notifications/>
       <Paymant/>
       <Apple/>
-      <Box bgcolor="#222222" position="relative" minHeight={2600} zIndex={1}>
-        <Box component="span" fontSize={50} color="#E1D3C1" fontWeight='normal' top={400} left="15%" position="absolute"  ref={thirdRef}>Лучшие условия для успешного старта </Box>
-        <Box position="absolute" left={32} top={600} display="flex" alignItems="center" justifyContent='space-between'>
+      <Box bgcolor="#222222" position="relative" minHeight={2600} zIndex={1} width={1}>
+        <Box component="span" fontSize={50} color="#E1D3C1" fontWeight='normal' top={400} position="absolute" width={1} display="flex" justifyContent="center"  ref={thirdRef}>Лучшие условия для успешного старта </Box>
+        <Box position="absolute" top={600} display="flex" alignItems="center"  width={1} justifyContent="center" >
           <Box component="span" fontSize={36} fontWeight={300} maxWidth={600} color="rgba(225, 211, 193, 0.87)">В это непростое время IQ.Academy стал одним из самых ценных партнеров. Проект позволяет преподавателям и консультантам зарабатывать создавая увлекательные онлайн курсы, чтобы студенты успешно осваивали учебный материал и получали дополнительные знания и навыки.</Box>
           <Box component="img" src="/user.png"/>
         </Box>

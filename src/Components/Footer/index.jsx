@@ -80,7 +80,7 @@ function Footer() {
   }
 
   return (
-    <Box mt={40} width={1} >
+    <Box mt={40} width={1} display="flex" flexDirection="column" justifyContent="center">
       <Box display="flex" justifyContent="center" width={1}>
         {cards.map(card => {
           return (
