@@ -22,7 +22,7 @@ function Header ({firstRef, secondRef, thirdRef}) {
         <Box style={{cursor:"pointer"}} onClick={firstScroll}>Для кого</Box>
         <Box style={{cursor:"pointer"}} onClick={secondScroll}>Возможности</Box>
         <Box style={{cursor:"pointer"}} onClick={thirdScroll}>Тарифы</Box>
-        <Box style={{cursor:"pointer"}} onClick={() => window.location = 'https://app.iq.academy/'}>Начать бесплатно</Box>
+        <Box color="rgb(15, 189, 233)" style={{cursor:"pointer"}} onClick={() => window.location = 'https://app.iq.academy/'}>Начать бесплатно</Box>
       </Box>
     </Box>
   )
