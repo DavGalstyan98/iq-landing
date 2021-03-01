@@ -126,16 +126,16 @@ function Welcome () {
           </Box>
         </Box>
       </Box>
-      <Box bgcolor="#222222" position="relative" minHeight={510} zIndex={0}>
-        <Box position="absolute" top={200} left="15%" zIndex={10} textAlign="left" display="flex" flexDirection="column">
-          <Box component="span" mb={2} color="#E1D3C1" fontSize={20} fontWeight={500}>Нужны персональные условия? </Box>
-          <Box component="span" mb={2} color="#E1D3C1" fontSize={20} fontWeight={300}>Оставьте заявку, мы перезвоним и обсудим детали</Box>
-          <TextField className={classes.root} id="standard-basic" label="Номер телефона" />
-          <Box mt={4}>
-            <Button text="Оставить заявку"/>
-          </Box>
-        </Box>
+      <Box bgcolor="#222222" position="relative" minHeight={510} zIndex={0} display="flex" width={1} justifyContent="center">
         <Box position="absolute" top={0} >
+          <Box position="absolute" top={200} left="15%" zIndex={10} textAlign="left" display="flex" flexDirection="column">
+            <Box component="span" mb={2} color="#E1D3C1" fontSize={20} fontWeight={500}>Нужны персональные условия? </Box>
+            <Box component="span" mb={2} color="#E1D3C1" fontSize={20} fontWeight={300}>Оставьте заявку, мы перезвоним и обсудим детали</Box>
+            <TextField className={classes.root} id="standard-basic" label="Номер телефона" />
+            <Box mt={4}>
+              <Button text="Оставить заявку"/>
+            </Box>
+          </Box>
             <Box component="img" src="/backgroundEnd.png" position="relative" top={110} />
         </Box>
         <Box component="img" src="/background18.png" position="relative" zIndex={1} left={-20}/>

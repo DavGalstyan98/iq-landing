@@ -3,7 +3,7 @@ import {Box} from "@material-ui/core";
 
 function ControlUsers () {
   return (
-    <Box bgcolor="#222222" mt={10} position="relative" minHeight={1400} zIndex={7} width={1}>
+    <Box bgcolor="#222222" mt={10} position="relative" display="flex" justifyContent="center"  minHeight={1400} zIndex={7} width={1}>
       <Box position="absolute" top={0} >
         <Box position="relative" >
           <Box component="img" src="/background3.png" position="absolute" top={110} />

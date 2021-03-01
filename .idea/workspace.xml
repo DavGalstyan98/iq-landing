@@ -12,9 +12,15 @@
   <component name="ChangeListManager">
     <list default="true" id="345c82f9-49ac-4c05-a4a8-587f15ad5dfe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Apple/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Apple/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Content/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Content/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ControlUsers/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ControlUsers/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Finansical/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Finansical/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Messanger/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Messanger/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Notifications/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Notifications/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Paymant/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Paymant/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/welcome/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/welcome/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/welcome.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,14 +43,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/svg" />
       <recent name="$PROJECT_DIR$/src/scss" />
       <recent name="$PROJECT_DIR$/src/Components" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

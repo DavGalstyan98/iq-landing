@@ -4,7 +4,7 @@ import {Box} from "@material-ui/core";
 
 function Messanger () {
   return (
-    <Box bgcolor="#222222" position="relative" minHeight={1500} zIndex={6}>
+    <Box bgcolor="#222222" position="relative" display="flex" justifyContent="center"  minHeight={1500} zIndex={6}>
       <Box position="absolute" top={0} >
         <Box position="relative" >
           <Box component="img" src="/background5.png" position="absolute" top={110} />

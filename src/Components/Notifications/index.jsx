@@ -4,7 +4,7 @@ import {Box} from "@material-ui/core";
 
 function Notifications () {
   return (
-    <Box bgcolor="#222222" position="relative" minHeight={1450} zIndex={4}>
+    <Box bgcolor="#222222" position="relative" display="flex" justifyContent="center"  minHeight={1450} zIndex={4}>
       <Box position="absolute" top={0} >
         <Box position="relative" >
           <Box component="img" src="/background9.png" position="absolute" top={110} />

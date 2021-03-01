@@ -3,7 +3,7 @@ import {Box} from "@material-ui/core";
 
 function Apple () {
   return(
-    <Box bgcolor="#222222" position="relative" minHeight={1300} zIndex={2}>
+    <Box bgcolor="#222222" position="relative" display="flex" justifyContent="center" minHeight={1300} zIndex={2}>
       <Box position="absolute" top={0} >
         <Box position="relative" >
           <Box component="img" src="/background13.png" position="absolute" top={110} />

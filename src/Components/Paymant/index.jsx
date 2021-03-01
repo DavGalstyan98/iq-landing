@@ -4,7 +4,7 @@ import {Box} from "@material-ui/core";
 
 function Paymant () {
   return (
-    <Box bgcolor="#222222" position="relative" minHeight={1300} zIndex={3}>
+    <Box bgcolor="#222222" position="relative" minHeight={1300} display="flex" justifyContent="center"  zIndex={3}>
       <Box position="absolute" top={0} >
         <Box position="relative" >
           <Box component="img" src="/background11.png" position="absolute" top={110} />

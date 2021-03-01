@@ -4,7 +4,7 @@ import {Box} from "@material-ui/core";
 
 function Finansical() {
   return (
-    <Box bgcolor="#222222" position="relative" minHeight={1350} zIndex={5} width={1}>
+    <Box bgcolor="#222222" position="relative" minHeight={1350} display="flex" justifyContent="center"  zIndex={5} width={1}>
       <Box position="absolute" top={0}>
         <Box position="relative">
           <Box component="img" src="/background7.png" position="absolute" top={110}/>
