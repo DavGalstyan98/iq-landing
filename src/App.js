@@ -1,6 +1,6 @@
-import './App.css';
-import '../src/scss/global.css'
-import {BrowserRouter} from "react-router-dom";
+import "./App.css";
+import "../src/scss/global.css";
+import { BrowserRouter } from "react-router-dom";
 import React from "react";
 import Welcome from "./Pages/welcome";
 

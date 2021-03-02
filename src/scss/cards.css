@@ -1,5 +1,9 @@
 @import "../index.css";
 
 .card {
-    background:  linear-gradient(141.26deg, rgba(147, 211, 232, 0.34) -2.83%, rgba(125, 204, 230, 0.068) 122.6%);
+  background: linear-gradient(
+    141.26deg,
+    rgba(147, 211, 232, 0.34) -2.83%,
+    rgba(125, 204, 230, 0.068) 122.6%
+  );
 }
