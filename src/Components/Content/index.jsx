@@ -1,5 +1,5 @@
-import React from "react";
-import { Box } from "@material-ui/core";
+import React from 'react';
+import { Box } from '@material-ui/core';
 
 function Content({ secondRef }) {
   return (
@@ -7,109 +7,67 @@ function Content({ secondRef }) {
       bgcolor="#222222"
       mt={10}
       position="relative"
-      minHeight={1100}
       display="flex"
       justifyContent="center"
       zIndex={8}
       width={1}
       ref={secondRef}
+      style={{
+        background: 'url(/bg-1.svg)',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+      }}
+      maxWidth={1800}
     >
       <Box
+        component="img"
+        src="/bg-1.svg"
+        width={1}
+        style={{ opacity: 0 }}
+        maxWidth={1800}
+      />
+      <Box
+        position="absolute"
+        top={200}
+        left={0}
+        right={0}
+        bottom={0}
         display="flex"
-        flexDirection="column"
         alignItems="center"
-        position="relative"
-        zIndex={10}
+        flexDirection="column"
       >
-        <Box component="span" fontSize={50} color="#E1D3C1" fontWeight="normal">
-          Лучшие инструменты для лучших результатов
-        </Box>
         <Box
-          component="span"
-          lineHeight="170%"
-          fontSize={26}
-          color="rgba(225, 211, 193, 0.87)"
-          maxWidth={976}
-          fontWeight={300}
-          my={5.2}
+          maxWidth={1}
+          mb={4.5}
+          height={0.13}
+          display="flex"
+          flexDirection="column"
+          justifyContent="flex-end"
         >
-          Мощные и функциональные инструменты помогут Вам <br /> достичь своих
-          целей и вдохновить учеников на обучение
+          <Box fontSize={50} fontWeight={400} color="#E1D3C1" mb={6}>
+            Лучшие инструменты для лучших результатов
+          </Box>
+          <Box fontSize={36} fontWeight={300} color="#E1D3C1">
+            Мощные и функциональные инструменты помогут <br /> Вам достичь своих
+            целей и вдохновить учеников на обучение
+          </Box>
         </Box>
-      </Box>
-      <Box position="absolute" top={0}>
-        <Box position="relative">
-          <Box
-            component="img"
-            src="/background1.png"
-            position="absolute"
-            top={30}
-          />
-          <Box
-            component="img"
-            src="/addContent.png"
-            position="absolute"
-            top={224}
-            right={180}
-          />
-          <Box
-            component="img"
-            src="/screenShot.png"
-            position="absolute"
-            top={322}
-            right={180}
-          />
-          <Box
-            component="img"
-            src="/navigation.png"
-            position="absolute"
-            top={772}
-            left={0}
-          />
-          <Box
-            component="img"
-            src="/navigation.png"
-            position="absolute"
-            top={772}
-            left={0}
-          />
-          <Box
-            component="img"
-            src="/Vector1.svg"
-            position="absolute"
-            top={190}
-            left={500}
-          />
-          <Box
-            component="img"
-            src="/Vector2.svg"
-            position="absolute"
-            right={400}
-            top={1120}
-          />
-          <Box
-            position="absolute"
-            top={300}
-            left={80}
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-            color="#E1D3C1"
-            className="constructorBackground"
-          >
-            {/*<Box position="absolute" left={-40} top={-80} component="img" src="/constructorBackground.png"/>*/}
-            <Box component="span" fontSize={20} fontWeight={500}>
-              Удобный конструктор уроков и тестов
-            </Box>
-            <Box mt={2} fontSize={20} fontWeight={300} maxWidth={400}>
-              Собирайте Ваш курс с помощью потрясающих виджетов. Без
-              программистов и дизайнеров, полностью самостоятельно, как на
-              сайте, так и с телефона. Все работает действительно понятно и
-              удобно
+        <Box position="absolute" width={0.85} maxWidth={1800} mt="15%">
+          <Box component="img" maxWidth={1} src="/bg-1-content.svg" width={1} />
+          <Box position="absolute" top={0} left={0} maxWidth={0.8}>
+            <Box component="img" src="/bg-1-text.svg" width={1} />
+            <Box position="absolute" top="25%" ml="5%" width={0.4}>
+              <Box fontSize={20} fontWeight={500} color="#E1D3C1" mb={3}>
+                Удобный конструктор уроков и тестов
+              </Box>
+              <Box fontSize={20} fontWeight={300} color="#E1D3C1">
+                Собирайте Ваш курс с помощью потрясающих виджетов. Без
+                программистов и дизайнеров, полностью самостоятельно, как на
+                сайте, так и с телефона. Все работает действительно понятно и
+                удобно
+              </Box>
             </Box>
           </Box>
-          <Box component="img" src="/background2.png" />
         </Box>
       </Box>
     </Box>

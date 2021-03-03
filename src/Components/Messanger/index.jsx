@@ -1,75 +1,54 @@
-import React from "react";
-import ControlUsers from "../ControlUsers";
-import { Box } from "@material-ui/core";
+import React from 'react';
+import { Box } from '@material-ui/core';
 
 function Messanger() {
   return (
     <Box
       bgcolor="#222222"
+      mt={-37.5}
       position="relative"
       display="flex"
       justifyContent="center"
-      minHeight={1500}
-      zIndex={6}
+      width={1}
+      style={{
+        background: 'url(/bg-3.svg)',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+      }}
+      maxWidth={1800}
+      zIndex={1}
     >
-      <Box position="absolute" top={0}>
-        <Box position="relative">
-          <Box
-            component="img"
-            src="/background5.png"
-            position="absolute"
-            top={110}
-          />
-          <Box
-            position="absolute"
-            top={210}
-            left={30}
-            color="#E1D3C1"
-            className="messengerBackground"
-            zIndex={2}
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Box component="span" fontSize={20} maxWidth={342} fontWeight={500}>
-              Собственный мессенджер
-            </Box>
-            <Box mt={2} fontSize={20} fontWeight={300} maxWidth={444}>
-              Все ученики на одном экране. Выявляйте отличников! Назначайте себе
-              администраторов, предоставляя им доступ к управлению Вашими
-              курсами и партнеров, давая им возможность продвигать Ваши продукты
+      <Box
+        component="img"
+        src="/bg-3.svg"
+        width={1}
+        style={{ opacity: 0 }}
+        maxWidth={1800}
+      />
+      <Box
+        position="absolute"
+        top={200}
+        left={0}
+        right={0}
+        bottom={0}
+        display="flex"
+        alignItems="center"
+        flexDirection="column"
+      >
+        <Box position="absolute" width={0.85} maxWidth={1800}>
+          <Box component="img" maxWidth={1} src="/bg-3-content.svg" width={1} />
+          <Box position="absolute" top="-12%" left="10%" maxWidth={0.4}>
+            <Box component="img" src="/bg-3-text.svg" width={1} />
+            <Box position="absolute" top="60%" ml="15%" width={0.6}>
+              <Box fontSize={20} fontWeight={500} color="#E1D3C1" mb={3}>
+                Собственный мессенджер
+              </Box>
+              <Box fontSize={20} fontWeight={300} color="#E1D3C1">
+                Отвечайте на вопросы учеников, беспокоить смогут только платные
+                студенты
+              </Box>
             </Box>
           </Box>
-          <Box
-            component="img"
-            src="/chat.png"
-            position="absolute"
-            right={86}
-            top={240}
-          />
-          <Box
-            component="img"
-            src="/download.png"
-            position="absolute"
-            top={650}
-            left={20}
-          />
-          <Box
-            component="img"
-            src="/message.png"
-            position="absolute"
-            top={1050}
-            left={250}
-          />
-          <Box
-            component="img"
-            src="/Vector4.svg"
-            position="absolute"
-            left={1000}
-            top={1650}
-          />
-          <Box component="img" src="/background6.png" />
         </Box>
       </Box>
     </Box>

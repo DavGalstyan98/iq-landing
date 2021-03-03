@@ -1,15 +1,15 @@
-import React from "react";
-import { Box, duration } from "@material-ui/core";
+import React from 'react';
+import { Box, duration } from '@material-ui/core';
 
 function Header({ firstRef, secondRef, thirdRef }) {
   function firstScroll() {
-    firstRef.current.scrollIntoView({ behavior: "smooth" });
+    firstRef.current.scrollIntoView({ behavior: 'smooth' });
   }
   function secondScroll() {
-    secondRef.current.scrollIntoView({ behavior: "smooth" });
+    secondRef.current.scrollIntoView({ behavior: 'smooth' });
   }
   function thirdScroll() {
-    thirdRef.current.scrollIntoView({ behavior: "smooth" });
+    thirdRef.current.scrollIntoView({ behavior: 'smooth' });
   }
 
   return (
@@ -20,7 +20,7 @@ function Header({ firstRef, secondRef, thirdRef }) {
       justifyContent="space-around"
       height={100}
     >
-      <Box style={{ cursor: "pointer" }}>
+      <Box style={{ cursor: 'pointer' }}>
         <Box component="img" src="/logo.svg" />
       </Box>
       <Box
@@ -31,19 +31,19 @@ function Header({ firstRef, secondRef, thirdRef }) {
         fontSize={20}
         fontWeight={300}
       >
-        <Box style={{ cursor: "pointer" }} onClick={firstScroll}>
+        <Box style={{ cursor: 'pointer' }} onClick={firstScroll}>
           Для кого
         </Box>
-        <Box style={{ cursor: "pointer" }} onClick={secondScroll}>
+        <Box style={{ cursor: 'pointer' }} onClick={secondScroll}>
           Возможности
         </Box>
-        <Box style={{ cursor: "pointer" }} onClick={thirdScroll}>
+        <Box style={{ cursor: 'pointer' }} onClick={thirdScroll}>
           Тарифы
         </Box>
         <Box
           color="rgb(15, 189, 233)"
-          style={{ cursor: "pointer" }}
-          onClick={() => (window.location = "https://app.iq.academy/")}
+          style={{ cursor: 'pointer' }}
+          onClick={() => (window.location = 'https://app.iq.academy/')}
         >
           Начать бесплатно
         </Box>

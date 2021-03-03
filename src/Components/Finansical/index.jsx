@@ -1,74 +1,60 @@
-import React from "react";
-import Messanger from "../Messanger";
-import { Box } from "@material-ui/core";
+import React from 'react';
+import { Box } from '@material-ui/core';
 
 function Finansical() {
   return (
     <Box
       bgcolor="#222222"
+      mt={-30}
       position="relative"
-      minHeight={1350}
       display="flex"
       justifyContent="center"
-      zIndex={5}
+      zIndex={0}
       width={1}
+      style={{
+        background: 'url(/bg-4.svg)',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+      }}
+      maxWidth={1800}
     >
-      <Box position="absolute" top={0}>
-        <Box position="relative">
-          <Box
-            component="img"
-            src="/background7.png"
-            position="absolute"
-            top={110}
-          />
-          <Box
-            position="absolute"
-            top={360}
-            right={160}
-            color="#E1D3C1"
-            className="payBackground"
-            zIndex={4}
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Box component="span" fontSize={20} maxWidth={342} fontWeight={500}>
-              Управление учениками и контроль прогресса обучения
-            </Box>
-            <Box mt={2} fontSize={20} fontWeight={300} maxWidth={382}>
-              Отвечайте на вопросы учеников, беспокоить смогут только платные
-              студенты
+      <Box
+        component="img"
+        src="/bg-4.svg"
+        width={1}
+        style={{ opacity: 0 }}
+        maxWidth={1800}
+      />
+      <Box
+        position="absolute"
+        top={200}
+        left={0}
+        right={0}
+        bottom={0}
+        display="flex"
+        alignItems="center"
+        flexDirection="column"
+      >
+        <Box
+          position="absolute"
+          width={0.85}
+          maxWidth={1800}
+          mt="15%"
+          zIndex={100}
+        >
+          <Box component="img" maxWidth={1} src="/bg-4-content.svg" width={1} />
+          <Box position="absolute" top="-25%" right={0} maxWidth={0.46}>
+            <Box component="img" src="/bg-4-text.svg" width={1} />
+            <Box position="absolute" bottom="13%" right="10%" width={0.68}>
+              <Box fontSize={20} fontWeight={500} color="#E1D3C1" mb={3}>
+                Встроенная платежная система и удобный вывод средств
+              </Box>
+              <Box fontSize={20} fontWeight={300} color="#E1D3C1">
+                Не тратьте время на подключение к платежным системам, мы это
+                сделали за Вас! Вывод заработанных средств прямо на Вашу карту
+              </Box>
             </Box>
           </Box>
-          <Box
-            component="img"
-            src="/finans.png"
-            position="absolute"
-            top={354}
-            left={0}
-          />
-          <Box
-            component="img"
-            src="/price.png"
-            position="absolute"
-            top={770}
-            left={420}
-          />
-          <Box
-            component="img"
-            src="/Vector5.png"
-            position="absolute"
-            left={240}
-            top={1378}
-          />
-          <Box
-            component="img"
-            src="/background8.png"
-            position="relative"
-            top={-200}
-            zIndex={-1}
-          />
         </Box>
       </Box>
     </Box>

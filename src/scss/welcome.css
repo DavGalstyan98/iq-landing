@@ -1,4 +1,4 @@
-@import "../index.css";
+@import '../index.css';
 
 .root {
   height: 100%;
@@ -64,47 +64,47 @@
 .constructorBackground {
   width: 596px;
   height: 385px;
-  background: url("/src/svg/constructorBackground.png") no-repeat center;
+  background: url('/src/svg/constructorBackground.png') no-repeat center;
 }
 
 .studentsBackground {
   width: 549px;
   height: 389px;
-  background: url("/src/svg/studentsBackground.png") no-repeat center;
+  background: url('/src/svg/studentsBackground.png') no-repeat center;
 }
 
 .messengerBackground {
   width: 568px;
   height: 355px;
-  background: url("/src/svg/manegerBackground.png") no-repeat center;
+  background: url('/src/svg/manegerBackground.png') no-repeat center;
 }
 
 .payBackground {
   width: 549px;
   height: 389px;
-  background: url("/src/svg/payBackground.png") no-repeat center;
+  background: url('/src/svg/payBackground.png') no-repeat center;
 }
 
 .pushBackground {
   width: 549px;
   height: 389px;
-  background: url("/src/svg/pushBackground.png") no-repeat center;
+  background: url('/src/svg/pushBackground.png') no-repeat center;
 }
 
 .optionBackground {
   width: 543px;
   height: 339px;
-  background: url("/src/svg/optionBackground.png") no-repeat center;
+  background: url('/src/svg/optionBackground.png') no-repeat center;
 }
 
 .iphoneBackground {
   width: 603px;
   height: 354px;
-  background: url("/src/svg/iphoneBackground.png") no-repeat center;
+  background: url('/src/svg/iphoneBackground.png') no-repeat center;
 }
 
 .cardsBackground {
   width: 955px;
   height: 625px;
-  background: url("../svg/underCardImage.png") no-repeat center;
+  background: url('../svg/underCardImage.png') no-repeat center;
 }

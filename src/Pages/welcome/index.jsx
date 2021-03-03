@@ -1,64 +1,89 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
 
-import { Box } from "@material-ui/core";
-import Header from "../../Components/Header";
-import Button from "../../Components/Button";
-import Card from "../../Components/Cards";
-import Content from "../../Components/Content";
-import ControlUsers from "../../Components/ControlUsers";
-import Messanger from "../../Components/Messanger";
-import Finansical from "../../Components/Finansical";
-import Notifications from "../../Components/Notifications";
-import Paymant from "../../Components/Paymant";
-import Apple from "../../Components/Apple";
-import Footer from "../../Components/Footer";
-import TextField from "@material-ui/core/TextField";
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import { Box } from '@material-ui/core';
+import Header from '../../Components/Header';
+import Button from '../../Components/Button';
+import Card from '../../Components/Cards';
+import Content from '../../Components/Content';
+import ControlUsers from '../../Components/ControlUsers';
+import Messanger from '../../Components/Messanger';
+import Finansical from '../../Components/Finansical';
+import Notifications from '../../Components/Notifications';
+import Paymant from '../../Components/Paymant';
+import Apple from '../../Components/Apple';
+import TextField from '@material-ui/core/TextField';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 
 const cards = [
   {
-    title: "Блогерам",
-    description: "Монетизируйте свою аудиторию продвигая свои знания в массы",
-    iconSrc: "/bloger.svg",
+    title: 'Блогерам, экспертам, преподавателям',
+    description: 'Тем, кто хочет зарабатывать на обучении людей',
+    price: 'Бесплатно',
+    tax: '20%',
+    iconSrc: '/bloger.svg',
   },
   {
-    title: "Экспертам",
-    description: "Зарабатывайте больше на своих знаниях",
-    iconSrc: "/icon74.svg",
+    title: 'Бизнесу, компаниям, организациям',
+    description: 'Тем, кто хочет учить своих сотрудников бесплатно',
+    price: '750₽/мес за сотрудника',
+    tax: 'Бесплатно',
+    iconSrc: '/hands.svg',
   },
   {
-    title: "Бизнесу",
-    description:
-      "Повышайте эффективность компании обучая и тестируя сотрудников онлайн",
-    iconSrc: "/XMLID.svg",
-  },
-  {
-    title: "Школам и ВУЗам",
-    description:
-      "Организуйте дистанционное обучение предоставляя ученикам Ваши курсы онлайн",
-    iconSrc: "/Scool.svg",
-  },
-  {
-    title: "Инфобизнесменам",
-    description:
-      "Передавайте полезную информацию в удобной форме и расширяйте свою аудиторию",
-    iconSrc: "/business.svg",
-  },
-  {
-    title: "Преподавателям",
-    description:
-      "Расширьте число учеников за счет безграничных возможностей интернета",
-    iconSrc: "/XMLID6.svg",
+    title: 'Университетам, школам, колледжам',
+    description: 'Официальным образовательным учреждениям',
+    price: 'Бесплатно',
+    tax: 'Бесплатно',
+    iconSrc: '/house.svg',
   },
 ];
 
-const useStyles = makeStyles((theme) => ({
+const explanations = [
+  {
+    id: 1,
+    text: 'Бесплатное создание курсов, для старта платить ничего не нужно',
+  },
+  {
+    id: 4,
+    text: 'Полный функционал без ограничений ',
+  },
+  {
+    id: 7,
+    text: 'Рассылки пользователям',
+  },
+  {
+    id: 2,
+    text: 'Неограниченное количество курсов',
+  },
+  {
+    id: 5,
+    text: 'Неограниченное хранилище данных',
+  },
+  {
+    id: 8,
+    text: 'Неограниченное количество сотрудников',
+  },
+  {
+    id: 3,
+    text: 'Неограниченное количество сотрудников',
+  },
+  {
+    id: 6,
+    text: 'Мобильное приложение для преподавателя и учеников',
+  },
+  {
+    id: 9,
+    text: 'Персональный менеджер',
+  },
+];
+
+const useStyles = makeStyles(theme => ({
   root: {
-    "& > *": {
+    '& > *': {
       // margin: theme.spacing(1),
-      color: "rgba(225, 211, 193, 0.5)",
-      borderColor: "rgba(225, 211, 193, 0.5)",
-      width: "25ch",
+      color: 'rgba(225, 211, 193, 0.5)',
+      borderColor: 'rgba(225, 211, 193, 0.5)',
+      width: '25ch',
     },
   },
 }));
@@ -86,10 +111,10 @@ function Welcome() {
             color="#E1D3C1"
             fontWeight="normal"
           >
-            Добро пожаловать <br />в{" "}
+            Добро пожаловать <br />в{' '}
             <Box component="span" color="#0FBDE9">
               будущее
-            </Box>{" "}
+            </Box>{' '}
             систем образования
           </Box>
           <Box
@@ -101,7 +126,7 @@ function Welcome() {
           >
             Лучшая платформа для создания и продажи курсов
           </Box>
-          <Box onClick={() => (window.location = "https://app.iq.academy/")}>
+          <Box onClick={() => (window.location = 'https://app.iq.academy/')}>
             <Button text="Начать бесплатно" />
           </Box>
         </Box>
@@ -164,7 +189,7 @@ function Welcome() {
               position="relative"
               zIndex={2}
             >
-              {cards.map((card) => (
+              {cards.map(card => (
                 <Card
                   key={card.title}
                   title={card.title}
@@ -173,94 +198,244 @@ function Welcome() {
                 />
               ))}
             </Box>
-            {/*<Box component="img" src='/underCardImage.png' position="absolute" top={30} left={0} right={0}/>*/}
           </Box>
         </Box>
       </Box>
-      <Content secondRef={secondRef} />
-      <ControlUsers />
-      <Messanger />
-      <Finansical />
-      <Notifications />
-      <Paymant />
-      <Apple />
-      <Box
-        bgcolor="#222222"
-        position="relative"
-        minHeight={2600}
-        zIndex={1}
-        width={1}
-      >
+      <Box display="flex" flexDirection="column" alignItems="center">
+        <Content secondRef={secondRef} />
+        <ControlUsers />
+        <Messanger />
+        <Finansical />
+        <Notifications />
+        <Paymant />
+        <Apple />
         <Box
-          component="span"
-          fontSize={50}
-          color="#E1D3C1"
-          fontWeight="normal"
-          top={400}
-          position="absolute"
-          width={1}
+          bgcolor="#222222"
+          position="relative"
           display="flex"
           justifyContent="center"
-          ref={thirdRef}
-        >
-          Лучшие условия для успешного старта{" "}
-        </Box>
-        <Box
-          position="absolute"
-          top={600}
-          display="flex"
           alignItems="center"
           width={1}
-          justifyContent="center"
+          style={{
+            background: 'url(/bg-8.svg)',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+          }}
+          maxWidth={1800}
+          zIndex={1}
         >
           <Box
-            component="span"
-            fontSize={36}
-            fontWeight={300}
-            maxWidth={600}
-            color="rgba(225, 211, 193, 0.87)"
-          >
-            В это непростое время IQ.Academy стал одним из самых ценных
-            партнеров. Проект позволяет преподавателям и консультантам
-            зарабатывать создавая увлекательные онлайн курсы, чтобы студенты
-            успешно осваивали учебный материал и получали дополнительные знания
-            и навыки.
-          </Box>
-          <Box component="img" src="/user.png" />
-        </Box>
-        <Box
-          top={1100}
-          position="absolute"
-          display="flex"
-          flexDirection="column"
-          width={1}
-        >
+            component="img"
+            src="/bg-8.svg"
+            width={1}
+            style={{ opacity: 0 }}
+            maxWidth={1800}
+          />
           <Box
-            component="span"
-            fontSize={36}
-            fontWeight={300}
-            color="rgba(15, 189, 233, 0.87)"
+            position="absolute"
+            top={350}
+            width={0.85}
+            bottom={0}
+            display="flex"
+            alignItems="center"
+            flexDirection="column"
           >
-            Мы создали идеальные условия для сотрудничества,
-            <br /> которых нет ни у одного конкурента
-          </Box>
-          <Footer />
-        </Box>
-        <Box position="absolute" top={0}>
-          <Box position="relative">
+            <Box fontSize={50} fontWeight={400} color="#E1D3C1">
+              Лучшие условия для успешного старта{' '}
+            </Box>
             <Box
-              component="img"
-              src="/background15.png"
-              position="absolute"
-              top={110}
-            />
+              display="flex"
+              justifyContent="space-between"
+              alignItems="flex-end"
+              my={11}
+            >
+              <Box
+                display="flex"
+                maxWidth={0.55}
+                fontSize={36}
+                fontWeight={300}
+                color="#E1D3C1"
+                textAlign="left"
+              >
+                В это непростое время IQ.Academy стал одним из самых ценных
+                партнеров. Проект позволяет преподавателям и консультантам
+                зарабатывать создавая увлекательные онлайн курсы, чтобы студенты
+                успешно осваивали учебный материал и получали дополнительные
+                знания и навыки.
+              </Box>
+              <Box display="flex" width={0.45}>
+                <Box component="img" src="/human.svg" width={1} />
+              </Box>
+            </Box>
             <Box
-              component="img"
-              src="/backgroundDown.png"
-              position="absolute"
-              top={1200}
-              zIndex={-1}
-            />
+              fontSize={36}
+              fontWeight={300}
+              color="rgba(15, 189, 233, 0.87)"
+              width={0.8}
+              mb={21}
+            >
+              Мы создали идеальные условия для сотрудничества, которых нет ни у
+              одного конкурента
+            </Box>
+            <Box
+              display="flex"
+              justifyContent="space-between"
+              width={1}
+              mb={18}
+            >
+              {cards.map(i => (
+                <Box
+                  key={i.title}
+                  display="flex"
+                  alignItems="center"
+                  flexDirection="column"
+                  width={400}
+                  borderRadius={20}
+                  style={{
+                    background:
+                      'linear-gradient(195.87deg, rgba(15, 189, 233, 0.3) 33.19%, rgba(68, 131, 147, 0) 88.66%), linear-gradient(59.19deg, rgba(92, 52, 250, 0.234) 6.02%, rgba(92, 52, 250, 0.093) 52.95%)',
+                    backdropFilter: 'blur(26px)',
+                    boxSizing: 'border-box',
+                  }}
+                  pb={4.5}
+                >
+                  <Box
+                    height={260}
+                    width={260}
+                    mt="-130px"
+                    borderRadius={20}
+                    mb={5}
+                    px={1}
+                    py={3}
+                    style={{
+                      background:
+                        'linear-gradient(228.5deg, rgba(79, 63, 132, 0.5) 38.4%, rgba(116, 92, 197, 0) 117.48%), linear-gradient(132.23deg, rgba(15, 189, 233, 0.7) 17.62%, rgba(76, 210, 243, 0) 85.59%)',
+                      backdropFilter: 'blur(26px)',
+                      boxSizing: 'border-box',
+                    }}
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    justifyContent="space-between"
+                  >
+                    <Box fontSize={20} fontWeight={500} color="#E1D3C1">
+                      {i.title}
+                    </Box>
+                    <Box component="img" src={i.iconSrc} />
+                    <Box fontSize={20} fontWeight={300} color="#E1D3C1">
+                      {i.description}
+                    </Box>
+                  </Box>
+                  <Box fontSize={20} fontWeight={500} color="#E1D3C1">
+                    Абонентская плата
+                  </Box>
+                  <Box
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    fontSize={20}
+                    fontWeight={300}
+                    color="#E1D3C1"
+                    minWidth={200}
+                    style={{
+                      background:
+                        'linear-gradient(290.86deg, rgba(55, 213, 214, 0.4104) -13.13%, rgba(54, 9, 109, 0.1998) 102.85%)',
+                      boxShadow:
+                        '-6px -12px 20px rgba(95, 79, 151, 0.26), 10px 12px 20px rgba(48, 35, 94, 0.37)',
+                      backdropFilter: 'blur(26px)',
+                      boxSizing: 'border-box',
+                    }}
+                    p={1.5}
+                    borderRadius={20}
+                    my={3.75}
+                  >
+                    {i.price}
+                  </Box>
+                  <Box fontSize={20} fontWeight={500} color="#E1D3C1" mb={3.75}>
+                    Комиссия с прибыли
+                  </Box>
+                  <Box
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    fontSize={20}
+                    fontWeight={300}
+                    color="#E1D3C1"
+                    minWidth={200}
+                    style={{
+                      background:
+                        'linear-gradient(290.86deg, rgba(55, 213, 214, 0.4104) -13.13%, rgba(54, 9, 109, 0.1998) 102.85%)',
+                      boxShadow:
+                        '-6px -12px 20px rgba(95, 79, 151, 0.26), 10px 12px 20px rgba(48, 35, 94, 0.37)',
+                      backdropFilter: 'blur(26px)',
+                      boxSizing: 'border-box',
+                    }}
+                    p={1.5}
+                    borderRadius={20}
+                  >
+                    {i.tax}
+                  </Box>
+                </Box>
+              ))}
+            </Box>
+            <Box
+              display="flex"
+              justifyContent="space-between"
+              width={1}
+              flexWrap="wrap"
+              p={3.5}
+              pb={1}
+              style={{
+                background: 'rgba(92, 52, 250, 0.34)',
+                backdropFilter: 'blur(26px)',
+              }}
+              borderRadius={20}
+              mb={6}
+            >
+              {explanations.map(i => (
+                <Box
+                  key={i.id}
+                  display="flex"
+                  minWidth={0.33}
+                  width={0.33}
+                  mb={2.5}
+                >
+                  <Box
+                    minWidth={50}
+                    widtn={50}
+                    height={50}
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                    fontSize={20}
+                    fontWeight={500}
+                    color="#E1D3C1"
+                    mr={2}
+                    style={{
+                      background:
+                        'radial-gradient(83% 61% at -15% 0%, #0FBDE9 0%, rgba(15, 189, 233, 0) 100%), radial-gradient(126.34% 75% at 66% 60%, rgba(92, 52, 250, 0.7) 0%, rgba(92, 52, 250, 0.7) 95.83%)',
+                    }}
+                    borderRadius="50%"
+                  >
+                    {i.id}
+                  </Box>
+                  <Box
+                    fontSize={20}
+                    fontWeight={300}
+                    color="#E1D3C1"
+                    width={1}
+                    textAlign="left"
+                    display="flex"
+                    alignItems="center"
+                  >
+                    {i.text}
+                  </Box>
+                </Box>
+              ))}
+            </Box>
+            <Box onClick={() => (window.location = 'https://app.iq.academy/')}>
+              <Button text="Начать работу с IQ.Academy" />
+            </Box>
           </Box>
         </Box>
       </Box>
@@ -290,7 +465,7 @@ function Welcome() {
               fontSize={20}
               fontWeight={500}
             >
-              Нужны персональные условия?{" "}
+              Нужны персональные условия?{' '}
             </Box>
             <Box
               component="span"
